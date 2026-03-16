@@ -1,0 +1,23 @@
+# Default configuration for novelty-search pipeline
+
+segmentation:
+  alpha: 1.0               # Sensitivity for adaptive threshold τ = μ + α·σ
+  metric: cosine            # Distance metric: cosine | euclidean
+
+idea_extraction:
+  llm_provider: openai      # openai | anthropic
+  model: gpt-4o-mini        # Cost-efficient for idea extraction
+  max_context_chars: 4000   # Truncate document context
+
+idea_clustering:
+  distance_threshold: 0.3   # δ — threshold for creating new base idea
+  embedding_model: all-MiniLM-L6-v2  # sentence-transformers model
+
+metrics:
+  k_neighbors: 10           # k for local density estimation
+  bpi_mode: full             # simple (D_M·C) or full (R·C·1/ρ)
+
+data:
+  source: arxiv              # arxiv | local
+  category: cs.CL            # arXiv category
+  max_papers: 500            # Max papers to process

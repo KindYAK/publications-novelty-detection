@@ -1,0 +1,86 @@
+[project]
+name = "novelty-search"
+version = "0.1.0"
+description = "Exploratory information search via quantitative conceptual novelty assessment of scientific publications"
+readme = {text = "", content-type = "text/plain"}
+requires-python = ">=3.11"
+dependencies = [
+    # Core scientific stack
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "pandas>=2.1",
+    # NLP & Embeddings
+    "sentence-transformers>=3.0",
+    "transformers>=4.40",
+    "tiktoken>=0.7",
+    # LLM APIs
+    "openai>=1.30",
+    "anthropic>=0.30",
+    # Data & IO
+    "arxiv>=2.1",
+    "requests>=2.31",
+    "tqdm>=4.66",
+    "pydantic>=2.7",
+    # Visualization
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "plotly>=5.22",
+    # Notebooks
+    "jupyter>=1.0",
+    "ipykernel>=6.29",
+    "pyarrow>=23.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11",
+    "mypy>=1.10",
+    "pytest>=8.2",
+    "pytest-cov>=5.0",
+    "ipdb>=0.13",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/novelty_search"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    # "TCH",  # type-checking imports — disabled, NDArray used at runtime
+    "RUF",  # ruff-specific
+]
+ignore = [
+    "E501",   # line too long
+    "RUF001", # ambiguous unicode (Cyrillic in Russian prompts)
+    "RUF002", # ambiguous unicode in docstrings (Greek math symbols)
+    "SIM108", # ternary operator (readability preference)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["novelty_search"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
