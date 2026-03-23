@@ -1,0 +1,8 @@
+{
+  "method": "kmeans",
+  "param": "k=100",
+  "n_clusters": 100,
+  "silhouette": 0.01399897038936615,
+  "pca_dims": 256,
+  "pca_variance": 0.792617678642273
+}
