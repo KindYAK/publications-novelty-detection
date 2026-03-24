@@ -51,6 +51,10 @@ experiments/*/data/idea_embeddings.npy
 experiments/*/data/ideas.jsonl
 experiments/*/data/idea_metadata.json
 
+# Russian-language docs (not for git)
+*_ru.md
+*_ru.txt
+
 # Environment
 .env
 .env.local
