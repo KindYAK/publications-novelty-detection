@@ -1,0 +1,31 @@
+rank,D_M,citations,year,title,false_positive
+1,24.53018184631052,46,2018,Knowledge Graph Embedding with Numeric Attributes of Entities,False
+2,23.79546491860819,74,2021,Contextualized Query Embeddings for Conversational Search,False
+3,23.608898473891973,27,2017,What Analogies Reveal about Word Vectors and their Compositionality,False
+4,23.19340572799039,9,2024,Watermarking for Large Language Models,True
+5,22.846984735270023,194,2017,When does a compliment become sexist? Analysis and classification of ambivalent sexism using twitter data,False
+6,22.78307778320873,2,2021,Pseudo-Label Guided Unsupervised Domain Adaptation of Contextual Embeddings,True
+7,22.55542621886493,17,2019,Figure Eight at {S}em{E}val-2019 Task 3: Ensemble of Transfer Learning Methods for Contextual Emotion Detection,True
+8,22.090220939778778,12,2019,Identification of Adjective-Noun Neologisms using Pretrained Language Models,True
+9,21.315329695674635,44,2020,Monolingual and Multilingual Reduction of Gender Bias in Contextualized Representations,False
+10,21.141686793650372,7,2022,Indigenous Language Revitalization and the Dilemma of Gender Bias,True
+11,21.081703713197353,26,2019,Exploring Human Gender Stereotypes with Word Association Test,False
+12,20.975657718331455,11,2019,Modeling Personal Biases in Language Use by Inducing Personalized Word Embeddings,True
+13,20.455429928920598,18,2017,Demographic Word Embeddings for Racism Detection on {T}witter,True
+14,20.386656880502937,20,2019,A Case Study on Meaning Representation for {V}ietnamese,False
+15,20.331837320944793,22,2020,{COVID-19} and {Arabic} {Twitter}: How can {Arab} World Governments and Public Health Organizations Learn from Social Media?,False
+16,20.21295274591253,41,2019,Semi-supervised Domain Adaptation for Dependency Parsing,False
+17,19.801559417615277,16,2020,Estimating the effect of {COVID-19} on mental health: Linguistic indicators of depression during a global pandemic,True
+18,19.777646723552664,63,2021,{T}rans{P}rompt: Towards an Automatic Transferable Prompting Framework for Few-shot Text Classification,False
+19,19.773213736256555,3,2017,Hyperspherical Query Likelihood Models with Word Embeddings,True
+20,19.493438422476103,2,2020,A Computational Analysis of Financial and Environmental Narratives within Financial Reports and its Value for Investors,True
+21,19.48235510534018,10,2020,Interdependencies of Gender and Race in Contextualized Word Embeddings,True
+22,19.41846089207851,10,2022,Gendered Language in Resumes and its Implications for Algorithmic Bias in Hiring,True
+23,19.39907848795046,93,2020,Dialogue-{AMR}: {A}bstract {M}eaning {R}epresentation for Dialogue,False
+24,19.37727879540974,9,2018,未登錄詞之向量表示法模型於中文機器閱讀理解之應用 (An {OOV} Word Embedding Framework for {C}hinese Machine Reading Comprehension) [In {C}hinese],True
+25,19.342885856983234,26,2017,Ideological Phrase Indicators for Classification of Political Discourse Framing on {T}witter,False
+26,19.328359162463347,35,2022,Flooding-{X}: Improving {BERT}{'}s Resistance to Adversarial Attacks via Loss-Restricted Fine-Tuning,False
+27,19.251074323632857,135,2018,未登錄詞之向量表示法模型於中文機器閱讀理解之應用 (An {OOV} Word Embedding Framework for {C}hinese Machine Reading Comprehension),False
+28,19.0002466873449,151,2017,Earth Mover{'}s Distance Minimization for Unsupervised Bilingual Lexicon Induction,False
+29,18.917746421977796,29,2017,Variation Autoencoder Based Network Representation Learning for Classification,False
+30,18.896682163741556,161,2019,Adaptive Convolution for Multi-Relational Learning,False

@@ -2,11 +2,16 @@
 
 ## Executive Summary
 
-**The paper's pipeline WORKS when you fix one thing: change spectrum aggregation from max to mean.**
+**The paper's pipeline WORKS when you fix spectrum aggregation (max→mean). Combining metrics via rank fusion achieves r=+0.461.**
 
-- Original paper (max aggregation): Spearman r = **-0.35** (ANTI-correlated with citations)
-- Fixed paper (mean aggregation, K=750): Spearman r = **+0.384**
-- Best overall: Paper-level kNN (k=5, 2y window): Spearman r = **+0.412**
+| What | Spearman r (test set) |
+|------|:---------------------:|
+| Original paper BPI (R·C/ρ, max) | **-0.179** |
+| Fixed D_M (mean spectrum, K=750) | +0.384 |
+| Paper-level kNN (k=5, 2y window) | +0.412 |
+| **Rank fusion: D_M + kNN + rarity** | **+0.461** |
+
+All results on temporal test set (papers ≥2019, n=2,913). Bootstrap 95% CI: D_M=[0.350, 0.415], kNN=[0.382, 0.442]. Robust across split years 2017-2021.
 
 All results on held-out temporal test set (papers ≥2019, n=2,913).
 
@@ -128,7 +133,73 @@ experiments/exp002_local/
 └── predictions.parquet      # Per-paper predictions
 ```
 
+---
+
+## Round 2: Combinations, Robustness, Classification, Error Analysis
+
+### Metric Combination (Exp 4)
+
+| Method | Spearman r |
+|--------|:----------:|
+| D_M_mean alone | +0.384 |
+| kNN(k=5, 2y) alone | +0.412 |
+| Rank fusion: D_M + kNN | +0.422 |
+| **Rank fusion: D_M + kNN + rarity** | **+0.461** |
+| XGBoost on temporal features | +0.173 |
+
+**Key finding**: Simple rank averaging of D_M, kNN, and rarity gives the best result (+0.461). Rarity alone is weak (r=0.080) but adds +0.04 when combined with D_M and kNN. XGBoost can't match unsupervised metrics because the temporal context is already encoded in them.
+
+### Robustness (Exp 5)
+
+| Split Year | n_train | n_test | D_M | kNN |
+|:----------:|:-------:|:------:|:---:|:---:|
+| 2017 | 1,368 | 3,864 | +0.344 | +0.346 |
+| 2018 | 1,801 | 3,431 | +0.362 | +0.371 |
+| 2019 | 2,319 | 2,913 | +0.384 | +0.412 |
+| 2020 | 2,896 | 2,336 | +0.388 | +0.447 |
+| 2021 | 3,556 | 1,676 | +0.359 | +0.482 |
+
+**Bootstrap 95% CI** (split=2019, 1000 iterations):
+- D_M: [0.350, 0.415]
+- kNN: [0.382, 0.442]
+
+Results are **highly robust**. Both metrics positive across all splits. kNN improves with more training data.
+
+### Breakthrough Classification (Exp 6)
+
+| Task | GB AUC | RF AUC | GB AP |
+|------|:------:|:------:|:-----:|
+| 50+ citations | 0.556 | **0.694** | 0.098 |
+| 100+ citations | 0.506 | 0.654 | 0.036 |
+| 500+ citations | 0.367 | 0.447 | 0.003 |
+
+**Verdict**: Novelty metrics are good for RANKING (Spearman r=0.46) but weak for CLASSIFICATION. AUC=0.69 for 50+ is OK but not deployment-ready. Novelty is necessary but not sufficient for high citations — execution quality, timing, author reputation also matter.
+
+### Error Analysis (Exp 7)
+
+**False Positives** (high D_M, low citations): Mostly papers about embedding biases (gender, race), non-English embeddings, niche applications. These are genuinely NOVEL (applying embeddings to unusual domains) but not impactful in the NLP community.
+
+**False Negatives** (high citations, low D_M): Standard NLP tools (dependency parsers, shared task systems). Popular but NOT novel — they do what existing papers do, just better. This is correct behavior!
+
+**Golden Set limitation**: Pre-2015 papers (GloVe, Word2Vec, Kim CNN) can't be scored with K=750 because there aren't 780+ prior papers. Need K<200 for early papers.
+
+## Final Leaderboard (test set, ≥2019)
+
+| Rank | Method | Spearman r | From paper? |
+|:----:|--------|:----------:|:-----------:|
+| 1 | **Rank fusion: D_M(mean) + kNN + R** | **+0.461** | Partially |
+| 2 | Rank fusion: D_M + kNN | +0.422 | Partially |
+| 3 | kNN(k=5, w=2y) paper embedding | +0.412 | No |
+| 4 | D_M (mean spectrum, K=750) | +0.384 | Yes (with fix) |
+| 5 | kNN in spectrum space (K=750, mean) | +0.298 | Partially |
+| 6 | RF (all features) | +0.239 | No |
+| 7 | Rarity R (mean spectrum) | +0.080 | Yes (with fix) |
+| 8 | Original BPI (R·C/ρ, max) | -0.179 | Yes (broken) |
+
 ## Compute Cost
 
-- Total runtime: 69 minutes
-- API cost: $0 (all local compute on existing embeddings)
+| Round | Runtime | API cost |
+|-------|---------|----------|
+| Round 1 (clustering sweep, novelty, XGBoost) | 69 min | $0 |
+| Round 2 (combinations, robustness, classification) | 14 min | $0 |
+| **Total local compute** | **83 min** | **$0** |

@@ -1,0 +1,11 @@
+title,tier,citations,DM_rank,DM_pct,kNN_rank,kNN_pct,DM_score,kNN_score
+GloVe: Global Vectors for Word Representation,high,34143,,,,,,
+Linguistic Regularities in Continuous Space Word Representations,high,3887,,,,,,
+Convolutional Neural Networks for Sentence Classification,high,14058,,,,,,
+Learning Phrase Representations using {RNN} Encoder{--}Decoder for Statistical Machine Translation,high,25776,,,,,,
+Learning Word Vectors for Sentiment Analysis,high,5869,,,,,,
+Contextual String Embeddings for Sequence Labeling,medium,1362,3197.0,25.47785547785548,3780.0,11.888111888111885,11.078335991440078,0.20979848504066467
+Universal Sentence Encoder for {E}nglish,medium,987,2969.0,30.79254079254079,2898.0,32.447552447552454,11.337294593287702,0.24483700096607208
+基於相依詞向量的剖析結果重估與排序(N-best Parse Rescoring Based on Dependency-Based Word Embeddings),medium,183,2329.0,45.710955710955716,2519.0,41.28205128205128,12.048859622771152,0.2550034523010254
+Named Entity Recognition with Bidirectional {LSTM}-{CNN}s,low,1968,2128.0,50.396270396270396,3140.0,26.806526806526808,12.285075723046287,0.23665714263916016
+Relation Classification via Convolutional Deep Neural Network,low,1741,,,,,,

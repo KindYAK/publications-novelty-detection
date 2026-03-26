@@ -1,0 +1,12 @@
+method,sp_r
+individual_D_M_mean,0.3835863341002404
+individual_p_knn5_2y,0.41163051441609916
+individual_p_knn10_all,0.40392477071025995
+individual_rarity_mean,0.08020291154395644
+individual_coherence,0.08920584497967618
+rank_fusion_D_M_mean+p_knn5_2y,0.4215251378085164
+rank_fusion_D_M_mean+p_knn10_all,0.4124253993671449
+rank_fusion_D_M_mean+p_knn5_2y+rarity_mean,0.460625260359899
+weighted_DM_kNN_w=1.00,0.3835863341002404
+RRF_DM_kNN,-0.4268029313401138
+GB_temporal_features,0.17285857347943512
