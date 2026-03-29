@@ -1,0 +1,5 @@
+model,sp_r,n_features
+GB_temporal_only,0.10744172858677756,7
+GB_temporal+abstract,0.13627401156832578,27
+GB_temporal+year,0.1909052044146243,6
+RF_temporal+abstract,0.060730366344693816,27

@@ -1,0 +1,22 @@
+K,title,tier,year,citations,D_M,rank,n_ranked,percentile
+50,GloVe: Global Vectors for Word Representation,high,2014,34143,4.403916698299268,4246,5168,17.84055727554179
+50,Linguistic Regularities in Continuous Space Word Representations,high,2013,3887,5.231640353705809,2280,5168,55.88235294117647
+50,Convolutional Neural Networks for Sentence Classification,high,2014,14058,9.213437925678168,12,5168,99.76780185758514
+50,Learning Phrase Representations using {RNN} Encoder{--}Decoder for Statistical Machine Translation,high,2014,25776,5.308945625013239,2097,5168,59.42337461300309
+50,Learning Word Vectors for Sentiment Analysis,high,2011,5869,6.592245693058569,440,5168,91.48606811145511
+50,Contextual String Embeddings for Sequence Labeling,medium,2018,1362,4.96481608589548,2920,5168,43.4984520123839
+50,Universal Sentence Encoder for {E}nglish,medium,2018,987,4.690893729307129,3629,5168,29.779411764705888
+100,GloVe: Global Vectors for Word Representation,high,2014,34143,5.626437338941922,4237,5111,17.100371747211895
+100,Linguistic Regularities in Continuous Space Word Representations,high,2013,3887,6.223356534269746,3139,5111,38.58344746624927
+100,Convolutional Neural Networks for Sentence Classification,high,2014,14058,11.39658756878355,18,5111,99.64781843083546
+100,Learning Phrase Representations using {RNN} Encoder{--}Decoder for Statistical Machine Translation,high,2014,25776,6.844519312412762,1946,5111,61.925259244766195
+100,Learning Word Vectors for Sentiment Analysis,high,2011,5869,9.708454565490074,91,5111,98.21952651144589
+100,Contextual String Embeddings for Sequence Labeling,medium,2018,1362,6.203890987683755,3181,5111,37.76169047153199
+100,Universal Sentence Encoder for {E}nglish,medium,2018,987,5.948132922170254,3705,5111,27.509293680297397
+200,GloVe: Global Vectors for Word Representation,high,2014,34143,6.868827411129684,4312,5003,13.811712972216672
+200,Linguistic Regularities in Continuous Space Word Representations,high,2013,3887,8.041819683846557,2553,5003,48.97061762942234
+200,Convolutional Neural Networks for Sentence Classification,high,2014,14058,13.881941993109937,26,5003,99.48031181291225
+200,Learning Phrase Representations using {RNN} Encoder{--}Decoder for Statistical Machine Translation,high,2014,25776,8.559399923582202,1792,5003,64.18149110533679
+200,Learning Word Vectors for Sentiment Analysis,high,2011,5869,11.835126208233474,87,5003,98.26104337397561
+200,Contextual String Embeddings for Sequence Labeling,medium,2018,1362,7.688793131690645,3117,5003,37.69738157105736
+200,Universal Sentence Encoder for {E}nglish,medium,2018,987,7.672763953193374,3145,5003,37.13771736957825
