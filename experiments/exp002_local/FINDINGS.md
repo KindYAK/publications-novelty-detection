@@ -4,7 +4,9 @@
 
 | Rank | Method | Spearman r | Source |
 |:----:|--------|:----------:|--------|
-| 1 | **Max-pool kNN(k=10, w=all)** | **+0.487** | Round 3 |
+| 0 | **kNN^0.5 · D_M^0.5 · R^0.1** | **+0.503** | Round 3+ |
+| 1 | harmonic_mean(kNN, D_M) | +0.503 | Round 3+ |
+| 2 | **Max-pool kNN(k=10, w=all)** | +0.487 | Round 3 |
 | 2 | Max-pool kNN(k=5, w=all) | +0.484 | Round 3 |
 | 3 | Max-pool kNN(k=5, w=3y) | +0.473 | Round 3 |
 | 4 | Rank fusion: D_M+kNN+R | +0.461 | Round 2 |
