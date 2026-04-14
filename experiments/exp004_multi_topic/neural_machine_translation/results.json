@@ -1,0 +1,74 @@
+{
+  "topic": "neural_machine_translation",
+  "n_papers": 2500,
+  "n_test": 1402,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": 0.08554304567953876,
+      "sp_p": 0.0013457798017896148,
+      "n": 1402
+    },
+    "knn_mean_pool": {
+      "sp_r": 0.09694306074808173,
+      "sp_p": 0.0002777710815002618,
+      "n": 1402
+    },
+    "D_M": {
+      "sp_r": 0.0633068690592584,
+      "sp_p": 0.017755328884367896,
+      "n": 1402
+    },
+    "R": {
+      "sp_r": 0.023632701676267208,
+      "sp_p": 0.3765772873728709,
+      "n": 1402
+    },
+    "C": {
+      "sp_r": 0.0238865809992164,
+      "sp_p": 0.3714706787100847,
+      "n": 1402
+    },
+    "BPI_original": {
+      "sp_r": 0.1463113353869596,
+      "sp_p": 3.731058863183946e-08,
+      "n": 1402
+    },
+    "combined_best": {
+      "sp_r": 0.07676834608135903,
+      "sp_p": 0.0040257020402171655,
+      "n": 1402
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Google's Neural Machine Translation System",
+      "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and M",
+      "year": 2016,
+      "citations": 7184,
+      "knn_pct": 69.10405785456007,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "Effective Approaches to Attention-based Neural Machine Trans",
+      "title": "Effective Approaches to Attention-based Neural Machine Translation",
+      "year": 2015,
+      "citations": 8324,
+      "knn_pct": 91.92446765769385
+    },
+    {
+      "query": "Convolutional Sequence to Sequence Learning",
+      "title": "Convolutional Sequence to Sequence Learning",
+      "year": 2017,
+      "citations": 3491,
+      "knn_pct": 19.56609079951788
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 281,
+    "precision_le19": 0.7437722419928826,
+    "max_cit_flagged": 306
+  }
+}

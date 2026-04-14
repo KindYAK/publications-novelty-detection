@@ -1,0 +1,83 @@
+{
+  "topic": "object_detection",
+  "n_papers": 2998,
+  "n_test": 2166,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": -0.009733083001349544,
+      "sp_p": 0.6507432532838439,
+      "n": 2166
+    },
+    "knn_mean_pool": {
+      "sp_r": -0.026736643723213542,
+      "sp_p": 0.21356007345286487,
+      "n": 2166
+    },
+    "D_M": {
+      "sp_r": 0.07172980520321996,
+      "sp_p": 0.0008356635165391524,
+      "n": 2166
+    },
+    "R": {
+      "sp_r": 0.07771912011652003,
+      "sp_p": 0.0002940790313742637,
+      "n": 2166
+    },
+    "C": {
+      "sp_r": 0.07990976121875397,
+      "sp_p": 0.00019700038874159086,
+      "n": 2166
+    },
+    "BPI_original": {
+      "sp_r": 0.17748460028858964,
+      "sp_p": 8.680702185558287e-17,
+      "n": 2166
+    },
+    "combined_best": {
+      "sp_r": 0.0364063392327213,
+      "sp_p": 0.0902756216343913,
+      "n": 2166
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "You Only Look Once",
+      "title": "Fast YOLO: A Fast You Only Look Once System for Real-time Embedded Object Detect",
+      "year": 2017,
+      "citations": 379,
+      "knn_pct": 83.16626339440027,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Faster R-CNN",
+      "title": "Face Detection with the Faster R-CNN",
+      "year": 2016,
+      "citations": 717,
+      "knn_pct": NaN,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Feature Pyramid Networks for Object Detection",
+      "title": "Feature Pyramid Networks for Object Detection",
+      "year": 2016,
+      "citations": 26026,
+      "knn_pct": NaN,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "End-to-End Object Detection with Transformers",
+      "title": "End-to-End Object Detection with Transformers",
+      "year": 2020,
+      "citations": 17297,
+      "knn_pct": 10.542689249913586
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 434,
+    "precision_le19": 0.5391705069124424,
+    "max_cit_flagged": 17297
+  }
+}

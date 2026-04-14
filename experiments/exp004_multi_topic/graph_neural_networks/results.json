@@ -1,0 +1,82 @@
+{
+  "topic": "graph_neural_networks",
+  "n_papers": 2999,
+  "n_test": 2535,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": 0.09725618254385549,
+      "sp_p": 9.297669526772848e-07,
+      "n": 2535
+    },
+    "knn_mean_pool": {
+      "sp_r": 0.029147832426375447,
+      "sp_p": 0.14233639730150263,
+      "n": 2535
+    },
+    "D_M": {
+      "sp_r": 0.10102344635564361,
+      "sp_p": 3.451825053253288e-07,
+      "n": 2535
+    },
+    "R": {
+      "sp_r": 0.1138130247959765,
+      "sp_p": 9.127095786730726e-09,
+      "n": 2535
+    },
+    "C": {
+      "sp_r": 0.11685399710005358,
+      "sp_p": 3.617873064663075e-09,
+      "n": 2535
+    },
+    "BPI_original": {
+      "sp_r": 0.2605084736555844,
+      "sp_p": 1.3398400728020742e-40,
+      "n": 2535
+    },
+    "combined_best": {
+      "sp_r": 0.10929209542071479,
+      "sp_p": 3.457352650615004e-08,
+      "n": 2535
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Semi-Supervised Classification with Graph Convolutional",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "year": 2016,
+      "citations": 33940,
+      "knn_pct": NaN,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Graph Attention Networks",
+      "title": "Graph Attention Networks",
+      "year": 2017,
+      "citations": 25082,
+      "knn_pct": NaN,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "How Powerful are Graph Neural Networks",
+      "title": "How Powerful are Graph Neural Networks?",
+      "year": 2018,
+      "citations": 9384,
+      "knn_pct": 65.37940379403794
+    },
+    {
+      "query": "Neural Message Passing for Quantum Chemistry",
+      "title": "Neural Message Passing for Quantum Chemistry",
+      "year": 2017,
+      "citations": 8674,
+      "knn_pct": NaN
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 507,
+    "precision_le19": 0.6331360946745562,
+    "max_cit_flagged": 1396
+  }
+}
