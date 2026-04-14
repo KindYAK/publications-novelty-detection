@@ -1,0 +1,67 @@
+{
+  "topic": "reinforcement_learning",
+  "n_papers": 3000,
+  "n_test": 2013,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": 0.002333980223029099,
+      "sp_p": 0.9166515159465505,
+      "n": 2013
+    },
+    "knn_mean_pool": {
+      "sp_r": 0.000589749150784046,
+      "sp_p": 0.9789035754323973,
+      "n": 2013
+    },
+    "D_M": {
+      "sp_r": 0.030267191512850462,
+      "sp_p": 0.1746384340605552,
+      "n": 2013
+    },
+    "R": {
+      "sp_r": 0.01569496049566336,
+      "sp_p": 0.4815676706383854,
+      "n": 2013
+    },
+    "C": {
+      "sp_r": 0.017855090773088732,
+      "sp_p": 0.42332786962996743,
+      "n": 2013
+    },
+    "BPI_original": {
+      "sp_r": 0.09999948308581179,
+      "sp_p": 6.953467530038893e-06,
+      "n": 2013
+    },
+    "combined_best": {
+      "sp_r": 0.003189541012337275,
+      "sp_p": 0.8862783995902495,
+      "n": 2013
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Proximal Policy Optimization Algorithms",
+      "title": "Proximal Policy Optimization Algorithms",
+      "year": 2017,
+      "citations": 25735,
+      "knn_pct": 8.743718592964825,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "Soft Actor-Critic",
+      "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a",
+      "year": 2018,
+      "citations": 10616,
+      "knn_pct": 14.137353433835845
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 403,
+    "precision_le19": 0.6054590570719603,
+    "max_cit_flagged": 18970
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "topic": "transformers",
+  "n_papers": 2997,
+  "n_test": 2716,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": -0.004707305260474789,
+      "sp_p": 0.8062931747297748,
+      "n": 2716
+    },
+    "knn_mean_pool": {
+      "sp_r": -0.0059448408590691915,
+      "sp_p": 0.7568065753180122,
+      "n": 2716
+    },
+    "D_M": {
+      "sp_r": 0.039201991215218765,
+      "sp_p": 0.0410656439235123,
+      "n": 2716
+    },
+    "R": {
+      "sp_r": 0.07427852372757586,
+      "sp_p": 0.00010679317538586935,
+      "n": 2716
+    },
+    "C": {
+      "sp_r": 0.08195524441837601,
+      "sp_p": 1.8998458241194722e-05,
+      "n": 2716
+    },
+    "BPI_original": {
+      "sp_r": 0.24400678811196028,
+      "sp_p": 4.1539372374917137e-38,
+      "n": 2716
+    },
+    "combined_best": {
+      "sp_r": 0.007480686354245981,
+      "sp_p": 0.6967703190625936,
+      "n": 2716
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Attention Is All You Need",
+      "title": "Attention Is All You Need",
+      "year": 2017,
+      "citations": 169119,
+      "knn_pct": 97.61904761904762,
+      "combined_pct": NaN
+    },
+    {
+      "query": "BERT: Pre-training of Deep Bidirectional",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "year": 2019,
+      "citations": 111398,
+      "knn_pct": 68.54460093896714,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Language Models are Few-Shot Learners",
+      "title": "Language Models are Few-Shot Learners",
+      "year": 2020,
+      "citations": 55246,
+      "knn_pct": 39.13480885311871,
+      "combined_pct": 52.68777614138439
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "Reformer: The Efficient Transformer",
+      "title": "Reformer: The Efficient Transformer",
+      "year": 2020,
+      "citations": 2808,
+      "knn_pct": 55.264922870556674
+    },
+    {
+      "query": "Exploring the Limits of Transfer Learning",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transforme",
+      "year": 2019,
+      "citations": 24742,
+      "knn_pct": 90.04024144869214
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 544,
+    "precision_le19": 0.44485294117647056,
+    "max_cit_flagged": 18970
+  }
+}

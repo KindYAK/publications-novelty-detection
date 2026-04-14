@@ -1,0 +1,82 @@
+{
+  "topic": "gans",
+  "n_papers": 3000,
+  "n_test": 1819,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": -0.003578311900204595,
+      "sp_p": 0.8787849887428973,
+      "n": 1819
+    },
+    "knn_mean_pool": {
+      "sp_r": -0.052198730362705496,
+      "sp_p": 0.025997475571736494,
+      "n": 1819
+    },
+    "D_M": {
+      "sp_r": 0.041587707957566986,
+      "sp_p": 0.0761868488727385,
+      "n": 1819
+    },
+    "R": {
+      "sp_r": 0.0945342722762814,
+      "sp_p": 5.387756543655629e-05,
+      "n": 1819
+    },
+    "C": {
+      "sp_r": 0.09647788832389585,
+      "sp_p": 3.763392859652187e-05,
+      "n": 1819
+    },
+    "BPI_original": {
+      "sp_r": 0.17848395411832135,
+      "sp_p": 1.7372708129571433e-14,
+      "n": 1819
+    },
+    "combined_best": {
+      "sp_r": 0.02990871117940632,
+      "sp_p": 0.2023067620305072,
+      "n": 1819
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Generative Adversarial",
+      "title": "Precomputed Real-Time Texture Synthesis with Markovian Generative Adversarial Ne",
+      "year": 2016,
+      "citations": 1509,
+      "knn_pct": NaN,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Image-to-Image Translation with Conditional Adversarial",
+      "title": "Image-to-Image Translation with Conditional Adversarial Networks",
+      "year": 2016,
+      "citations": 21859,
+      "knn_pct": NaN,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "Style-Based Generator Architecture",
+      "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+      "year": 2018,
+      "citations": 12505,
+      "knn_pct": 14.437222032158742
+    },
+    {
+      "query": "Unpaired Image-to-Image Translation",
+      "title": "One-to-one Mapping for Unpaired Image-to-image Translation",
+      "year": 2019,
+      "citations": 22,
+      "knn_pct": 84.46801231611359
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 364,
+    "precision_le19": 0.6346153846153846,
+    "max_cit_flagged": 3566
+  }
+}
