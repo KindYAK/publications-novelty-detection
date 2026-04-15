@@ -1,0 +1,323 @@
+{
+  "topic": "overall_mixed",
+  "n_papers": 9345,
+  "n_test": 5605,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": -0.15842056465297374,
+      "sp_p": 7.94742787190528e-33,
+      "n": 5605
+    },
+    "knn_mean_pool": {
+      "sp_r": -0.0930191265994674,
+      "sp_p": 3.002657862615878e-12,
+      "n": 5605
+    },
+    "D_M": {
+      "sp_r": -0.024064701266382202,
+      "sp_p": 0.07162408509659776,
+      "n": 5605
+    },
+    "R": {
+      "sp_r": -0.004936449022881943,
+      "sp_p": 0.7117590085983052,
+      "n": 5605
+    },
+    "C": {
+      "sp_r": -0.00254186228867267,
+      "sp_p": 0.849106714457641,
+      "n": 5605
+    },
+    "BPI_original": {
+      "sp_r": 0.003981464692964498,
+      "sp_p": 0.7656930771530233,
+      "n": 5605
+    },
+    "combined_best": {
+      "sp_r": -0.11500299240279721,
+      "sp_p": 5.789834367072935e-18,
+      "n": 5605
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Attention Is All You Need",
+      "title": "Attention Is All You Need",
+      "year": 2017,
+      "citations": 169119,
+      "knn_pct": 76.31550744829065,
+      "combined_pct": 89.68910758219639
+    },
+    {
+      "query": "BERT: Pre-training of Deep Bidirectional",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "year": 2019,
+      "citations": 111398,
+      "knn_pct": 22.537777301468225,
+      "combined_pct": 13.565197942294787
+    },
+    {
+      "query": "Language Models are Few-Shot Learners",
+      "title": "Language Models are Few-Shot Learners",
+      "year": 2020,
+      "citations": 55246,
+      "knn_pct": 9.045118422462759,
+      "combined_pct": 10.154327890852159
+    },
+    {
+      "query": "Proximal Policy Optimization Algorithms",
+      "title": "Proximal Policy Optimization Algorithms",
+      "year": 2017,
+      "citations": 25735,
+      "knn_pct": 7.823384417532956,
+      "combined_pct": 9.863565197942295
+    },
+    {
+      "query": "Generative Adversarial",
+      "title": "Precomputed Real-Time Texture Synthesis with Markovian Generative Adversarial Ne",
+      "year": 2016,
+      "citations": 1509,
+      "knn_pct": 97.09570249705284,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Image-to-Image Translation with Conditional Adversarial",
+      "title": "Image-to-Image Translation with Conditional Adversarial Networks",
+      "year": 2016,
+      "citations": 21859,
+      "knn_pct": 87.58975458150252,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Semi-Supervised Classification with Graph Convolutional",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "year": 2016,
+      "citations": 33940,
+      "knn_pct": 93.48408530704104,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Graph Attention Networks",
+      "title": "Graph Attention Networks",
+      "year": 2017,
+      "citations": 25082,
+      "knn_pct": 43.91812238773979,
+      "combined_pct": 85.20465220308657
+    },
+    {
+      "query": "You Only Look Once",
+      "title": "Fast YOLO: A Fast You Only Look Once System for Real-time Embedded Object Detect",
+      "year": 2017,
+      "citations": 379,
+      "knn_pct": 78.63037187868396,
+      "combined_pct": 76.34757324983225
+    },
+    {
+      "query": "Faster R-CNN",
+      "title": "Face Detection with the Faster R-CNN",
+      "year": 2016,
+      "citations": 717,
+      "knn_pct": 94.75940413674847,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Feature Pyramid Networks for Object Detection",
+      "title": "Feature Pyramid Networks for Object Detection",
+      "year": 2016,
+      "citations": 26026,
+      "knn_pct": 96.52770335441004,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Google's Neural Machine Translation System",
+      "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and M",
+      "year": 2016,
+      "citations": 7184,
+      "knn_pct": 76.56199764226771,
+      "combined_pct": NaN
+    },
+    {
+      "query": "DistilBERT",
+      "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+      "year": 2019,
+      "citations": 9283,
+      "knn_pct": 10.60979530596935,
+      "combined_pct": 16.46164169089689
+    },
+    {
+      "query": "Denoising Diffusion Probabilistic Models",
+      "title": "Improved Denoising Diffusion Probabilistic Models",
+      "year": 2021,
+      "citations": 4973,
+      "knn_pct": 27.178223127210373,
+      "combined_pct": 30.261686423618876
+    },
+    {
+      "query": "High-Resolution Image Synthesis with Latent Diffusion",
+      "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "year": 2021,
+      "citations": 22759,
+      "knn_pct": 9.184438966884578,
+      "combined_pct": 12.066651755759338
+    },
+    {
+      "query": "Diffusion Models Beat GANs",
+      "title": "Diffusion Models Beat GANs on Image Synthesis",
+      "year": 2021,
+      "citations": 11003,
+      "knn_pct": 38.891865823598756,
+      "combined_pct": 81.99507940058153
+    },
+    {
+      "query": "Communication-Efficient Learning of Deep Networks from Decen",
+      "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+      "year": 2016,
+      "citations": 22985,
+      "knn_pct": 99.30339727789091,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Model-Agnostic Meta-Learning",
+      "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks",
+      "year": 2017,
+      "citations": 13954,
+      "knn_pct": 15.08948665737863,
+      "combined_pct": 37.73205099530306
+    },
+    {
+      "query": "Prototypical Networks for Few-shot Learning",
+      "title": "Prototypical Networks for Few-shot Learning",
+      "year": 2017,
+      "citations": 9586,
+      "knn_pct": 56.628442824991964,
+      "combined_pct": 69.01140684410646
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "Reformer: The Efficient Transformer",
+      "title": "Reformer: The Efficient Transformer",
+      "year": 2020,
+      "citations": 2808,
+      "knn_pct": 29.535955417425786
+    },
+    {
+      "query": "Exploring the Limits of Transfer Learning",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transforme",
+      "year": 2019,
+      "citations": 24742,
+      "knn_pct": 66.46661665416354
+    },
+    {
+      "query": "Soft Actor-Critic",
+      "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a",
+      "year": 2018,
+      "citations": 10616,
+      "knn_pct": 18.958311006323008
+    },
+    {
+      "query": "Style-Based Generator Architecture",
+      "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+      "year": 2018,
+      "citations": 12505,
+      "knn_pct": 22.5699281963348
+    },
+    {
+      "query": "Unpaired Image-to-Image Translation",
+      "title": "AttentionGAN: Unpaired Image-to-Image Translation using Attention-Guided Generat",
+      "year": 2019,
+      "citations": 266,
+      "knn_pct": 55.61033115421713
+    },
+    {
+      "query": "How Powerful are Graph Neural Networks",
+      "title": "How Powerful are Graph Neural Networks?",
+      "year": 2018,
+      "citations": 9384,
+      "knn_pct": 43.38227413996356
+    },
+    {
+      "query": "Neural Message Passing for Quantum Chemistry",
+      "title": "Neural Message Passing for Quantum Chemistry",
+      "year": 2017,
+      "citations": 8674,
+      "knn_pct": 65.67356124745473
+    },
+    {
+      "query": "End-to-End Object Detection with Transformers",
+      "title": "End-to-End Object Detection with Transformers",
+      "year": 2020,
+      "citations": 17297,
+      "knn_pct": 9.238023791662203
+    },
+    {
+      "query": "Effective Approaches to Attention-based Neural Machine Trans",
+      "title": "Effective Approaches to Attention-based Neural Machine Translation",
+      "year": 2015,
+      "citations": 8324,
+      "knn_pct": 92.93752009430929
+    },
+    {
+      "query": "Convolutional Sequence to Sequence Learning",
+      "title": "Convolutional Sequence to Sequence Learning",
+      "year": 2017,
+      "citations": 3491,
+      "knn_pct": 4.318936877076411
+    },
+    {
+      "query": "TinyBERT",
+      "title": "TinyBERT: Distilling BERT for Natural Language Understanding",
+      "year": 2019,
+      "citations": 2243,
+      "knn_pct": 13.374772264494695
+    },
+    {
+      "query": "Born Again Neural Networks",
+      "title": "Born Again Neural Networks",
+      "year": 2018,
+      "citations": 1167,
+      "knn_pct": 20.78019504876219
+    },
+    {
+      "query": "Score-Based Generative Modeling through Stochastic Different",
+      "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+      "year": 2020,
+      "citations": 9657,
+      "knn_pct": 82.34915871825099
+    },
+    {
+      "query": "Denoising Diffusion Implicit Models",
+      "title": "Denoising Diffusion Implicit Models",
+      "year": 2020,
+      "citations": 11047,
+      "knn_pct": 15.13235451720073
+    },
+    {
+      "query": "Federated Optimization in Heterogeneous Networks",
+      "title": "Federated Optimization in Heterogeneous Networks",
+      "year": 2018,
+      "citations": 7258,
+      "knn_pct": 37.75586753831315
+    },
+    {
+      "query": "Advances and Open Problems in Federated Learning",
+      "title": "Advances and Open Problems in Federated Learning",
+      "year": 2019,
+      "citations": 8030,
+      "knn_pct": 32.25806451612903
+    },
+    {
+      "query": "Learning to Compare: Relation Network",
+      "title": "Learning to Compare: Relation Network for Few-Shot Learning",
+      "year": 2017,
+      "citations": 4552,
+      "knn_pct": 41.26031507876969
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 1121,
+    "precision_le19": 0.0,
+    "max_cit_flagged": 55246
+  }
+}
