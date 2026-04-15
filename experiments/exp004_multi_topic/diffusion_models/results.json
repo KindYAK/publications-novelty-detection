@@ -1,0 +1,90 @@
+{
+  "topic": "diffusion_models",
+  "n_papers": 2500,
+  "n_test": 2480,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": 0.09884522579052904,
+      "sp_p": 8.136990488230002e-07,
+      "n": 2480
+    },
+    "knn_mean_pool": {
+      "sp_r": 0.11349388135431808,
+      "sp_p": 1.449634835262128e-08,
+      "n": 2480
+    },
+    "D_M": {
+      "sp_r": 0.18887221495969583,
+      "sp_p": 4.572039844787968e-19,
+      "n": 2194
+    },
+    "R": {
+      "sp_r": 0.05711375794780594,
+      "sp_p": 0.007453400160866119,
+      "n": 2194
+    },
+    "C": {
+      "sp_r": 0.10241580163623569,
+      "sp_p": 3.2022249105932976e-07,
+      "n": 2480
+    },
+    "BPI_original": {
+      "sp_r": 0.31969568361805734,
+      "sp_p": 2.552869501991491e-53,
+      "n": 2194
+    },
+    "combined_best": {
+      "sp_r": 0.11972878224970364,
+      "sp_p": 1.8533240851323267e-08,
+      "n": 2194
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Denoising Diffusion Probabilistic Models",
+      "title": "Improved Denoising Diffusion Probabilistic Models",
+      "year": 2021,
+      "citations": 4973,
+      "knn_pct": 78.38709677419354,
+      "combined_pct": NaN
+    },
+    {
+      "query": "High-Resolution Image Synthesis with Latent Diffusion",
+      "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "year": 2021,
+      "citations": 22759,
+      "knn_pct": 86.12903225806451,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Diffusion Models Beat GANs",
+      "title": "Diffusion Models Beat GANs on Image Synthesis",
+      "year": 2021,
+      "citations": 11003,
+      "knn_pct": 93.0241935483871,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "Score-Based Generative Modeling through Stochastic Different",
+      "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+      "year": 2020,
+      "citations": 9657,
+      "knn_pct": NaN
+    },
+    {
+      "query": "Denoising Diffusion Implicit Models",
+      "title": "Denoising Diffusion Implicit Models",
+      "year": 2020,
+      "citations": 11047,
+      "knn_pct": NaN
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 496,
+    "precision_le19": 0.5221774193548387,
+    "max_cit_flagged": 6310
+  }
+}

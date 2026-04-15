@@ -1,0 +1,74 @@
+{
+  "topic": "federated_learning",
+  "n_papers": 2498,
+  "n_test": 2221,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": 0.14093820792123482,
+      "sp_p": 2.5294270918814117e-11,
+      "n": 2221
+    },
+    "knn_mean_pool": {
+      "sp_r": 0.1669396521313777,
+      "sp_p": 2.4011195032870804e-15,
+      "n": 2221
+    },
+    "D_M": {
+      "sp_r": 0.15484918767219444,
+      "sp_p": 2.1705985365013501e-13,
+      "n": 2221
+    },
+    "R": {
+      "sp_r": 0.033231049097503025,
+      "sp_p": 0.11743138021096049,
+      "n": 2221
+    },
+    "C": {
+      "sp_r": 0.03613846519624394,
+      "sp_p": 0.08862189891420807,
+      "n": 2221
+    },
+    "BPI_original": {
+      "sp_r": 0.26969123906808823,
+      "sp_p": 2.564651562421686e-38,
+      "n": 2221
+    },
+    "combined_best": {
+      "sp_r": 0.15346833131823734,
+      "sp_p": 3.551992683851761e-13,
+      "n": 2221
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Communication-Efficient Learning of Deep Networks from Decen",
+      "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+      "year": 2016,
+      "citations": 22985,
+      "knn_pct": NaN,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "Federated Optimization in Heterogeneous Networks",
+      "title": "Federated Optimization in Heterogeneous Networks",
+      "year": 2018,
+      "citations": 7258,
+      "knn_pct": 48.585286984640256
+    },
+    {
+      "query": "Advances and Open Problems in Federated Learning",
+      "title": "Advances and Open Problems in Federated Learning",
+      "year": 2019,
+      "citations": 8030,
+      "knn_pct": 39.6928051738076
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 445,
+    "precision_le19": 0.7370786516853932,
+    "max_cit_flagged": 511
+  }
+}

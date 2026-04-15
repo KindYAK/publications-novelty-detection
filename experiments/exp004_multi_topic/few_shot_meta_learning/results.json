@@ -1,0 +1,75 @@
+{
+  "topic": "few_shot_meta_learning",
+  "n_papers": 2499,
+  "n_test": 2095,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": 0.08058738217296883,
+      "sp_p": 0.00022216180414744258,
+      "n": 2095
+    },
+    "knn_mean_pool": {
+      "sp_r": 0.08994311501637926,
+      "sp_p": 3.7445298565213397e-05,
+      "n": 2095
+    },
+    "D_M": {
+      "sp_r": 0.11159969785148738,
+      "sp_p": 3.039132579282797e-07,
+      "n": 2095
+    },
+    "R": {
+      "sp_r": 0.08856112032177418,
+      "sp_p": 4.926128598522482e-05,
+      "n": 2095
+    },
+    "C": {
+      "sp_r": 0.08866415876953368,
+      "sp_p": 4.827073425016562e-05,
+      "n": 2095
+    },
+    "BPI_original": {
+      "sp_r": 0.26041318400436614,
+      "sp_p": 8.07201350890203e-34,
+      "n": 2095
+    },
+    "combined_best": {
+      "sp_r": 0.0951759464587807,
+      "sp_p": 1.2792594080145314e-05,
+      "n": 2095
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "Model-Agnostic Meta-Learning",
+      "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks",
+      "year": 2017,
+      "citations": 13954,
+      "knn_pct": 90.80645161290323,
+      "combined_pct": NaN
+    },
+    {
+      "query": "Prototypical Networks for Few-shot Learning",
+      "title": "Prototypical Networks for Few-shot Learning",
+      "year": 2017,
+      "citations": 9586,
+      "knn_pct": 96.16935483870968,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "Learning to Compare: Relation Network",
+      "title": "Learning to Compare: Relation Network for Few-Shot Learning",
+      "year": 2017,
+      "citations": 4552,
+      "knn_pct": 86.29032258064517
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 419,
+    "precision_le19": 0.5918854415274463,
+    "max_cit_flagged": 7740
+  }
+}

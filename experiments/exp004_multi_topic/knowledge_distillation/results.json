@@ -1,0 +1,74 @@
+{
+  "topic": "knowledge_distillation",
+  "n_papers": 2500,
+  "n_test": 2200,
+  "split_year": 2020,
+  "metrics": {
+    "knn_max_pool": {
+      "sp_r": 0.1243406400002928,
+      "sp_p": 4.871621127341816e-09,
+      "n": 2200
+    },
+    "knn_mean_pool": {
+      "sp_r": 0.09967652138808995,
+      "sp_p": 2.809793107109215e-06,
+      "n": 2200
+    },
+    "D_M": {
+      "sp_r": 0.056450463450070876,
+      "sp_p": 0.008088130043774285,
+      "n": 2200
+    },
+    "R": {
+      "sp_r": 0.0708632192249174,
+      "sp_p": 0.0008807903576927685,
+      "n": 2200
+    },
+    "C": {
+      "sp_r": 0.07516185053173502,
+      "sp_p": 0.00041809353690533814,
+      "n": 2200
+    },
+    "BPI_original": {
+      "sp_r": 0.2635178021825711,
+      "sp_p": 2.8621847269574536e-36,
+      "n": 2200
+    },
+    "combined_best": {
+      "sp_r": 0.09353697557752341,
+      "sp_p": 1.1107068434467617e-05,
+      "n": 2200
+    }
+  },
+  "golden_high_results": [
+    {
+      "query": "DistilBERT",
+      "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+      "year": 2019,
+      "citations": 9283,
+      "knn_pct": 43.023723361479696,
+      "combined_pct": NaN
+    }
+  ],
+  "golden_medium_results": [
+    {
+      "query": "TinyBERT",
+      "title": "TinyBERT: Distilling BERT for Natural Language Understanding",
+      "year": 2019,
+      "citations": 2243,
+      "knn_pct": 65.58102131081624
+    },
+    {
+      "query": "Born Again Neural Networks",
+      "title": "Born Again Neural Networks",
+      "year": 2018,
+      "citations": 1167,
+      "knn_pct": 60.27342179332529
+    }
+  ],
+  "trash_detection": {
+    "n_flagged": 440,
+    "precision_le19": 0.6977272727272728,
+    "max_cit_flagged": 1739
+  }
+}
