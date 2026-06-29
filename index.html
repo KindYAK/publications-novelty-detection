@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Новизна научных статей — explorer (4 класса · 10 тем · геометрия · золотые оценки)</title>
+<style>
+:root{--ink:#1c2230;--blue:#2c3e6b;--line:#d7dbe6;--gold:#b8860b}
+*{box-sizing:border-box}
+body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.5;
+ max-width:1180px;margin:20px auto;padding:0 16px;background:#fcfcfd}
+h1{font-size:22px;border-bottom:3px solid var(--blue);padding-bottom:6px;margin-bottom:6px}
+.sub{color:#5b6680;font-size:13.5px;margin:0 0 10px}
+details{margin:10px 0}
+summary{cursor:pointer;font-weight:600;color:var(--blue);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:7px;margin:10px 0}
+.card{border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:#fff;font-size:12.5px}
+.card b{display:inline-block}
+.card .d{color:#5b6680}
+.gtitle{font-size:13px;font-weight:600;color:#34406b;margin:12px 0 2px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;background:#f3f5fa;border:1px solid var(--line);
+ border-radius:10px;padding:10px 12px;margin:8px 0}
+.controls.row2{background:#eef1f8}
+.controls label{display:block;font-size:11.5px;color:#54607e;margin-bottom:3px}
+select,input{font-size:14px;padding:6px 8px;border:1px solid #c3cad8;border-radius:6px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{padding:5px 8px;border-bottom:1px solid #e7eaf1;text-align:left;white-space:nowrap}
+th{cursor:pointer;color:var(--blue);position:sticky;top:0;background:#fcfcfd;user-select:none;font-size:12.5px}
+th.num,td.num{text-align:right}
+td.title{white-space:normal;max-width:430px}
+.badge{font-size:10.5px;padding:1px 6px;border-radius:10px;color:#fff;font-weight:600;text-transform:uppercase}
+.EARTH{background:#c0392b}.FORGOTTEN{background:#1d7a44}.POPULAR{background:#2c6fb0}.ordinary{background:#9098a8}
+.gtag{font-size:10.5px;padding:1px 6px;border-radius:10px;font-weight:600;color:#fff;background:var(--gold)}
+.bar{display:inline-block;height:9px;border-radius:2px;background:#9db4d8;vertical-align:middle}
+a{color:var(--blue)}
+.count{font-size:13px;color:#3a445e;margin:8px 0;font-weight:500}
+.count b{color:var(--blue)}
+</style>
+</head>
+<body>
+<h1>🔭 Новизна научных статей — explorer</h1>
+<p class="sub">Метод посчитан по <b>~442 000 статьям</b> arXiv (cs.CL/CV/LG/AI). Здесь — <b>выборка</b>:
+<b>все «заметные»</b> статьи (землетрясения / забытые / популярные), попавшие в эти 10 тем, + образец
+рядовых + <b>все наши «золотые» ручные оценки</b>. Рядовая масса целиком (≈317K) в статическую страницу
+не помещается, поэтому от неё — только образец.</p>
+
+<details>
+<summary>❓ Что значат классы, золотые оценки и оси — раскрыть</summary>
+<div class="gtitle">Класс — автоматическая метка метода (по двум осям: оригинаторность × влияние)</div>
+<div class="grid">
+<div class="card"><b><span class="badge EARTH">EARTH-QUAKER</span></b> <span class="d">— оригинатор <b>и</b> сильно цитируется</span></div>
+<div class="card"><b><span class="badge FORGOTTEN">FORGOTTEN-PIONEER</span></b> <span class="d">— оригинатор, но цитирований мало (кандидат)</span></div>
+<div class="card"><b><span class="badge POPULAR">POPULAR-DERIV</span></b> <span class="d">— цитируется, но оригинаторность низкая</span></div>
+<div class="card"><b><span class="badge ordinary">ordinary</span></b> <span class="d">— рядовая статья (ни то, ни другое)</span></div>
+</div>
+<div class="gtitle">★ Наша оценка — <b>ручная</b> разметка («что мы считаем попаданиями», эксперт-корзины)</div>
+<div class="grid">
+<div class="card"><b><span class="gtag">★ EARTH-QUAKER</span></b> <span class="d">— парадигму сдвинувшие (экспертная корзина)</span></div>
+<div class="card"><b><span class="gtag">★ POPULAR-DERIV</span></b> <span class="d">— популярные инструменты/бенчмарки/варианты</span></div>
+<div class="card"><b><span class="gtag">★ UNDERRATED</span></b> <span class="d">— прозорливые, но недооценённые</span></div>
+<div class="card"><b><span class="gtag">★ FORGOTTEN</span></b> <span class="d">— сильные, но забытые первопроходцы</span></div>
+</div>
+<div class="gtitle">Оси (все citation-free, кроме impact)</div>
+<div class="grid">
+<div class="card"><b>orig</b> <span class="d">— оригинаторность (after_density): плотность «волны» статей ПОСЛЕ этой</span></div>
+<div class="card"><b>lead</b> <span class="d">— опережение траектории темы, в годах (эксперим., шумная)</span></div>
+<div class="card"><b>wake</b> <span class="d">— «слава волны» (after_cit): как сильно цитируют пришедших ПОСЛЕ</span></div>
+<div class="card"><b>impact</b> <span class="d">— перцентиль своих цитирований (<b>не</b> citation-free)</span></div>
+<div class="card"><b>pnov</b> <span class="d">— новизна относительно того, что было ДО (prior_nov)</span></div>
+<div class="card"><b>frac_after</b> <span class="d">— доля семантических соседей, вышедших позже</span></div>
+<div class="card"><b>early</b> <span class="d">— раннесть: насколько мало статей в теме было до неё</span></div>
+</div>
+<div class="gtitle">Как собрана эта выборка — 57 570 из 442 507</div>
+<div class="card" style="margin-top:2px">
+Это <b>не</b> «топ по сумме метрик» и <b>не</b> «топ по одной оси». Отбор по <b>классу и теме</b>:
+<b>(1)</b> все «заметные» статьи (🌋 землетрясения + 🕯️ забытые + 📈 популярные), попавшие в любую из 10 тем
+— целиком, без числового порога (~54,7K); <b>(2)</b> + по <b>300 рядовых на тему</b> (топ по
+оригинаторности — чтобы класс <i>ordinary</i> был виден, но без всего шума); <b>(3)</b> + все <b>173
+«золотые»</b> ручные оценки. Рядовую массу (~317K) целиком в статическую страницу не вместить.
+</div>
+</details>
+
+<div class="controls">
+<div><label>Тема (10)</label><select id="topic"></select></div>
+<div><label>Класс (метод)</label><select id="cls"></select></div>
+<div><label>★ Наша оценка</label><select id="gold"></select></div>
+<div><label>Область</label><select id="field"></select></div>
+</div>
+<div class="controls row2">
+<div><label>Сортировать по</label><select id="sort"></select></div>
+<div><label>Поиск в заголовке</label><input id="q" placeholder="напр. diffusion, lora…" size="20"></div>
+<div><label>Показать</label><select id="lim"><option>50</option><option>100</option><option>250</option><option>1000</option></select></div>
+</div>
+<div class="count" id="count"></div>
+
+<table id="tbl"><thead><tr>
+<th data-k="cls">класс</th><th data-k="gold">★ наша</th>
+<th class="title" data-k="title">статья</th>
+<th class="num" data-k="year">год</th><th data-k="field">обл.</th>
+<th class="num" data-k="orig">orig</th><th class="num" data-k="lead">lead</th>
+<th class="num" data-k="wake">wake</th><th class="num" data-k="impact">impact</th>
+<th class="num" data-k="pnov">pnov</th><th class="num" data-k="fafter">frac_after</th>
+<th class="num" data-k="early">early</th>
+</tr></thead><tbody id="rows"></tbody></table>
+
+<script>
+let DATA=null, sortKey="orig", sortDir=-1;
+const $=id=>document.getElementById(id);
+const SORTS={orig:"оригинаторность",lead:"опережение (лет)",wake:"слава волны",impact:"влияние",
+  pnov:"новизна vs prior",fafter:"frac_after",early:"раннесть",year:"год"};
+function opt(sel,val,txt){const e=document.createElement("option");e.value=val;e.textContent=txt;sel.appendChild(e);}
+function badge(c){return `<span class="badge ${c.split("-")[0]}">${c}</span>`;}
+function render(){
+  if(!DATA)return;
+  const tp=$("topic").value, cl=$("cls").value, gd=$("gold").value, fl=$("field").value, q=$("q").value.trim().toLowerCase();
+  let r=DATA.rows.filter(x=>
+    (tp==="все"||(x.topics||[]).includes(tp)) &&
+    (cl==="все"||x.cls===cl) &&
+    (gd==="все"||(gd==="любой ★"?x.gold!=null:x.gold===gd)) &&
+    (fl==="все"||x.field===fl) &&
+    (!q||x.title.toLowerCase().includes(q)));
+  r.sort((a,b)=>{let av=a[sortKey],bv=b[sortKey];av=av==null?-Infinity:av;bv=bv==null?-Infinity:bv;
+    return typeof av==="string"?sortDir*av.localeCompare(bv):sortDir*(av-bv);});
+  const lim=+$("lim").value, shown=r.slice(0,lim);
+  $("count").innerHTML=`Под фильтры подходит <b>${r.length.toLocaleString("ru")}</b> из ${DATA.rows.length.toLocaleString("ru")} в выборке (показано ${shown.length}) · сортировка ${SORTS[sortKey]||sortKey} ${sortDir<0?"↓":"↑"}`
+    +` &nbsp;·&nbsp; <span style="color:#5b6680">выборка — заметные + золотые из ${DATA.total.toLocaleString("ru")} проанализированных</span>`;
+  $("rows").innerHTML=shown.map(x=>{
+    const bw=v=>v==null?"":`<span class="bar" style="width:${Math.round(v*46)}px"></span> ${v.toFixed(2)}`;
+    const leadFmt=v=>v==null?"":`<span style="color:${v>0?'#1d7a44':'#8a8f9c'}">${v>0?'+':''}${v.toFixed(1)}</span>`;
+    const gold=x.gold?`<span class="gtag">★ ${x.gold}</span>`:"";
+    return `<tr><td>${badge(x.cls)}</td><td>${gold}</td>
+      <td class="title"><a href="https://arxiv.org/abs/${x.id}" target="_blank">${x.title||x.id}</a></td>
+      <td class="num">${x.year??""}</td><td>${x.field.replace("cs.","")}</td>
+      <td class="num">${bw(x.orig)}</td><td class="num">${leadFmt(x.lead)}</td>
+      <td class="num">${bw(x.wake)}</td><td class="num">${bw(x.impact)}</td>
+      <td class="num">${bw(x.pnov)}</td><td class="num">${bw(x.fafter)}</td><td class="num">${bw(x.early)}</td></tr>`;
+  }).join("");
+}
+document.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;
+  if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=(k==="title"||k==="field"||k==="cls"||k==="gold")?1:-1;}
+  if(SORTS[k])$("sort").value=k; render();});
+let qto;
+$("q").addEventListener("input",()=>{clearTimeout(qto);qto=setTimeout(render,160);});  // debounce over 57K rows
+["topic","cls","gold","field","sort","lim"].forEach(id=>$(id).addEventListener("input",()=>{
+  if(id==="sort"){sortKey=$("sort").value;sortDir=-1;}render();}));
+fetch("pages_data.json").then(r=>r.json()).then(d=>{DATA=d;
+  opt($("topic"),"все","все");d.topics.forEach(t=>opt($("topic"),t,t));
+  opt($("cls"),"все","все");d.classes.forEach(c=>opt($("cls"),c,c.toUpperCase()));
+  opt($("gold"),"все","все");opt($("gold"),"любой ★","любой ★ (наши попадания)");d.golds.forEach(g=>opt($("gold"),g,"★ "+g));
+  opt($("field"),"все","все");["cs.CL","cs.CV","cs.LG","cs.AI"].forEach(f=>opt($("field"),f,f));
+  Object.keys(SORTS).forEach(k=>opt($("sort"),k,SORTS[k]));$("sort").value="orig";
+  render();});
+</script>
+</body>
+</html>
